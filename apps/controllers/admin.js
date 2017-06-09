@@ -100,7 +100,6 @@ router.post("/signin", function(req, res) {
     } else {
         var data = user_md.getUserByEmail(params.email);
         if (data) {
-            console.log("123123");
             data.then(function(users) {
                 console.log(JSON.stringify(users));
                 var user = users[0];

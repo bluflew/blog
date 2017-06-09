@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tech Blog</title>
+    <title>Tech Blog - About</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -66,14 +66,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('/static/theme/img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('/static/theme/img/about-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Tech Blog</h1>
+                    <div class="page-heading">
+                        <h1>About Me</h1>
                         <hr class="small">
-                        <span class="subheading">The most technology for you.</span>
+                        <span class="subheading">This is what I do.</span>
                     </div>
                 </div>
             </div>
@@ -84,28 +84,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <% if (data && data.posts) {%>
-                    <% for(var i = 0 ; i < data.posts.length ; i++) {%>
-                    <div class="post-preview">
-                        <a href="/blog/post/<%=data.posts[i].id%>">
-                            <h2 class="post-title">
-                                <%=data.posts[i].title%>
-                            </h2>
-                            <h3 class="post-subtitle">
-                                <%-data.posts[i].content%>
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by <a href="#"><%=data.posts[i].author%></a> on <%=data.posts[i].created_at%></p>
-                    </div>
-                    <hr>
-                    <% } %>
-                <% } %>
-                <!-- Pager -->
-               <!--  <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul> -->
+                <p>My name is Tran Thanh (Tran Van Thanh), you may call me Cuong. I am a Software Engineer and I improving my skills to become a full-stack developer. Now, I working as Web Developer in Da Nang, Viet Nam. I like to share and be shared knowledge and experiences with other people, because it is the way quickly to improve myself.</p>
+
+                <p>I graduated from DaNang University of Technology with a Engineering Software degree. I very like studying new technologies and special is open-source platform. I have many loves for Linux, Git, JavaScript and all linux-based technologies.</p>
             </div>
         </div>
     </div>
@@ -143,7 +124,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Tech Blog 2017</p>
+                    <p class="copyright text-muted">Copyright &copy; tTech Blog 2017</p>
                 </div>
             </div>
         </div>
