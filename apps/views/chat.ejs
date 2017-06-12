@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Application</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font: 13px Helvetica, Arial; }
+		form { background: #000; padding: 3px; position: fixed; bottom: 10px; width: 90%; }
+		form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+		form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+		#conversation { list-style-type: none; margin: 0; padding: 0; }
+		#conversation li { padding: 5px 10px; }
+		#conversation li:nth-child(odd) { background: #eee; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul id="conversation">
+			
+		</ul>
+		<form>
+			<input type="text" name="message" id="message" />
+			<button class="btn btn-success">Send</button>
+		</form>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.2/socket.io.js"></script>
+	<script type="text/javascript"></script>
+</body>
+</html>

@@ -3,6 +3,8 @@ var config = require('config');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
+var socketio = require('socket.io');
+
 var app = express();
 // Body parser
 app.use(bodyParser.json());
@@ -29,6 +31,11 @@ app.use(controllers);
 var host = config.get("server.host");
 var port = config.get("server.port");
 
-app.listen(port, host, function() {
+var server = app.listen(port, host, function() {
   console.log('Server is running on port ', port);
 });
+
+// Tich hop socket io vao express.
+var io = socketio(server);
+
+var socketController = require('./apps/common/socketController')(io);
